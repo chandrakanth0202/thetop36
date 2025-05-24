@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheTop36</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #002147;
+      --accent: #d7141a;
+      --ivory: #fdfdfd;
+      --light-gray: #f0f0f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Lora';
+      background-color: var(--ivory);
+      color: var(--primary);
+    }
+
+    header, footer {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      font-size: 0.9rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .logo {
+        width: 100%;
+        text-align: center;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TheTop36</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Finalists</a>
+      <a href="#">Poll</a>
+      <a href="#">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Finalist Spotlight</h2>
+      <p>Discover the most innovative creators across 216 categories, handpicked for excellence.</p>
+      <div class="btn-group">
+        <button class="btn-primary">View Finalists</button>
+        <button class="btn-ghost">Vote Now</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 TheTop36. All rights reserved.
+  </footer>
+
+</body>
+</html>
